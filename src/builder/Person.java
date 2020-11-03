@@ -78,10 +78,21 @@ public class Person {
         this.hobby = builder.hobby;
         this.birthDate = builder.birthDate;
         this.petName = builder.petName;
-
     }
 
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", address=" + address +
+                ", hobby='" + hobby + '\'' +
+                ", birthDate=" + birthDate +
+                ", petName='" + petName + '\'' +
+                '}';
+    }
 }
 
 
